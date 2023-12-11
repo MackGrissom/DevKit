@@ -56,7 +56,7 @@ export const NavItem = ({
     {
       label: "Whiteboard",
       icon: <PenToolIcon className="h-4 w-4 mr-2" />,
-      href: `/organization/${organization.id}/activity`,
+      href: `/organization/${organization.id}/whiteboard`,
     },
     {
       label: "Settings",
