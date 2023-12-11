@@ -6,6 +6,7 @@ import {
   Activity,
   CreditCard,
   Layout,
+  PenToolIcon,
   Settings,
 } from "lucide-react";
 
@@ -43,13 +44,18 @@ export const NavItem = ({
 
   const routes = [
     {
-      label: "Boards",
+      label: "Task Manager",
       icon: <Layout className="h-4 w-4 mr-2" />,
       href: `/organization/${organization.id}`,
     },
     {
-      label: "Activity",
+      label: "Task Activity",
       icon: <Activity className="h-4 w-4 mr-2" />,
+      href: `/organization/${organization.id}/activity`,
+    },
+    {
+      label: "Whiteboard",
+      icon: <PenToolIcon className="h-4 w-4 mr-2" />,
       href: `/organization/${organization.id}/activity`,
     },
     {

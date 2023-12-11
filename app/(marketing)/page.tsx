@@ -1,17 +1,23 @@
-import Link from "next/link";
-import localFont from "next/font/local";
-import { Poppins } from "next/font/google";
-import { Medal } from "lucide-react";
-
-import { cn } from "@/lib/utils";
+'use client'
 import { Button } from "@/components/ui/button";
+import { Laptop, Medal, Rocket } from "lucide-react";
+import Link from "next/link";
+import React from "react";
+import localFont from 'next/font/local'
+import { cn } from "@/lib/utils";
+import { Montserrat, Poppins } from "next/font/google";
+import { FaDiscord } from "react-icons/fa";
+
+import { Tldraw } from '@tldraw/tldraw'
+import '@tldraw/tldraw/tldraw.css'
+
+import Features from "./_components/features";
 
 const headingFont = localFont({
   src: "../../public/fonts/font.woff2"
 });
-
-const textFont = Poppins({
-  subsets: ["latin"],
+const textFont = Montserrat({
+  subsets: ['latin'],
   weight: [
     "100",
     "200",
@@ -21,40 +27,38 @@ const textFont = Poppins({
     "600",
     "700",
     "800",
-    "900"
-  ],
+    "900",
+  ]
 });
 
 const MarketingPage = () => {
   return (
-    <div className="flex items-center justify-center flex-col">
-      <div className={cn(
-        "flex items-center justify-center flex-col",
-        headingFont.className,
-      )}>
-        <div className="mb-4 flex items-center border shadow-sm p-4 bg-amber-100 text-amber-700 rounded-full uppercase">
-          <Medal className="h-6 w-6 mr-2" />
-          No 1 task managment
+    <>
+    		
+    <div className="flex flex-col items-center justify-center space-y-8 h-full mb-20">
+      <div className={cn("flex flex-col items-center justify-center", headingFont.className)}>
+        <div className="mb-6 flex items-center border shadow-sm p-2 bg-gray-100 text-amber-700 hover:bg-slate-700 hover:text-white rounded-lg uppercase cursor-pointer">
+          {/* <Laptop className="h-6 w-6 mr-2" /> */}
+          Join The Community &nbsp; <FaDiscord/>
         </div>
-        <h1 className="text-3xl md:text-6xl text-center text-neutral-800 mb-6">
-          Taskify helps team move
+        <h1 className="text-4xl md:text-6xl text-center text-neutral-900 font-bold mb-6">
+          Elevate Development with DevKit
         </h1>
-        <div className="text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white px-4 p-2 rounded-md pb-4 w-fit">
-          work forward.
+        <div className="text-3xl md:text-5xl text-white bg-gradient-to-r from-slate-700 to-amber-600 px-6 py-3 rounded-lg w-fit text-center">
+        Ideate, Create, Execute.
         </div>
       </div>
-      <div className={cn(
-        "text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto",
-        textFont.className,
-      )}>
-        Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office, the way your team works is unique - accomplish it all with Taskify.
+      <div className={cn("text-lg md:text-xl text-neutral-600 max-w-md md:max-w-2xl text-center", textFont.className)}>
+        From concept, to code, to community; DevKit offers an agile ecosystem that fuels collaborative and efficient software development. <br/>
+        
       </div>
-      <Button className="mt-6" size="lg" asChild>
-        <Link href="/sign-up">
-          Get Taskify for free
-        </Link>
+      <Button className="text-lg px-8 py-3 bg-amber-600 text-white hover:bg-amber-700 transition duration-300 ease-in-out rounded-lg">
+        <Link href="/sign-up">Try DevKit for Free</Link>
       </Button>
     </div>
+
+    <Features/>
+    </>
   );
 };
 
