@@ -6,7 +6,7 @@ const DashboardLayout = ({
   children: React.ReactNode;
  }) => {
   return (
-    <div className="h-full">
+    <div className="h-full bg-gradient-to-t from-amber-100 via-white to-slate-100">
       <Navbar />
       {children}
     </div>

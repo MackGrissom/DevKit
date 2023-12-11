@@ -49,14 +49,14 @@ export function Features() {
           <h2 className="text-base font-semibold leading-7 text-indigo-600">Devkit </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Empowering Devs with Essential Tools</p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Devkit offers a powerful toolkit: Task Manager, Code Sandbox, Database Architecture Tool, and a thriving community. <br/> Elevate your development experience with Devkit&apos;s array of features.
+            A powerful toolkit: Task Manager, Code Sandbox, Whiteboard, and a thriving community. 
           </p>
         </div>
       </div>
       <div className="relative overflow-hidden pt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <Image
-            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+            src="/feature.png"
             alt="App screenshot"
             className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
             width={2432}
