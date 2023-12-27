@@ -5,7 +5,7 @@ import React from "react";
 
 const Whiteboard = () => {
   return (
-    <div style={{ position: 'fixed', inset: 80 }} className=' pl-64 h-[85vh] w-[90vw]'>
+    <div style={{ position: 'fixed', inset:100 }} className=' ml-64 h-[full] w-[full] -z-[0]'>
       <Tldraw />{" "}
     </div>
   );

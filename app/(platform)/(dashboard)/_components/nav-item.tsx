@@ -6,6 +6,8 @@ import {
   Activity,
   CreditCard,
   Layout,
+  MessageCircleIcon,
+  PaintBucket,
   PenToolIcon,
   Settings,
 } from "lucide-react";
@@ -57,6 +59,16 @@ export const NavItem = ({
       label: "Whiteboard",
       icon: <PenToolIcon className="h-4 w-4 mr-2" />,
       href: `/organization/${organization.id}/whiteboard`,
+    },
+    {
+      label: "Sandbox",
+      icon: <PaintBucket className="h-4 w-4 mr-2" />,
+      href: `/organization/${organization.id}/sandbox`,
+    },
+    {
+      label: "CodeGPT",
+      icon: <MessageCircleIcon className="h-4 w-4 mr-2" />,
+      href: `/organization/${organization.id}/codeGPT`,
     },
     {
       label: "Settings",
