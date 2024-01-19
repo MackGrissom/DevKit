@@ -4,11 +4,13 @@ import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 import {
   Activity,
+  Contact2,
   CreditCard,
   Layout,
   MessageCircleIcon,
   PaintBucket,
   PenToolIcon,
+  PersonStanding,
   Settings,
 } from "lucide-react";
 
@@ -69,6 +71,11 @@ export const NavItem = ({
       label: "CodeGPT",
       icon: <MessageCircleIcon className="h-4 w-4 mr-2" />,
       href: `/organization/${organization.id}/codeGPT`,
+    },
+    {
+      label: "Community",
+      icon: <Contact2 className="h-4 w-4 mr-2" />,
+      href: `/organization/${organization.id}/community`,
     },
     {
       label: "Settings",

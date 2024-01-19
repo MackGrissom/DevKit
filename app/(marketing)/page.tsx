@@ -42,10 +42,10 @@ const MarketingPage = () => {
           Join The Community &nbsp; <FaDiscord/>
         </div>
         <h1 className="text-4xl md:text-6xl text-center text-neutral-900 font-bold mb-6">
-          Visualize Development with DevKit
+          The Ultimate Developer Toolkit
         </h1>
         <div className="text-3xl md:text-5xl text-white bg-gradient-to-r from-slate-700 to-amber-600 px-6 py-3 rounded-lg w-fit text-center">
-        Ideate, Create, Execute.
+        Ideate, Create, Learn, Share.
         </div>
       </div>
       <div className={cn("text-lg md:text-xl text-neutral-600 max-w-md md:max-w-2xl text-center", textFont.className)}>
